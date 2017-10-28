@@ -1,4 +1,5 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
@@ -8,6 +9,10 @@ public class Obstacle : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		rigidbody2D.velocity = velocity;
+		GetComponent<Rigidbody2D>().velocity = velocity;﻿
+	}
+	// Update is called once per frame
+	void Update () {
+
 	}
 }
